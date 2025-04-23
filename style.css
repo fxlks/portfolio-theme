@@ -1,0 +1,473 @@
+/*
+Theme Name: My Portfolio Theme
+Author: Karolina
+Description: A simple portfolio theme for showcasing projects.
+Version: 1.0
+*/
+
+body {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(209, 16, 174) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+.hero-content h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: black;
+}
+.about-text h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: black;
+}
+.about-text p{
+    font-family: 'Courier New', Courier, monospace;
+    
+    color: black;
+}
+/*navigation bar*/
+nav {
+    background: black;
+    padding: 10px 20px;
+    position: sticky;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(90deg,rgb(209, 16, 174) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1));;
+    border-radius: 5px;
+    
+}
+nav .menu-logo img {
+    max-height: 30px; /* Smaller logo height */
+    width: auto; /* Keep aspect ratio */
+    margin-right: 20px; /* Space between logo and Home link */
+}
+
+/* Home page */
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+.left-content {
+    flex: 1; 
+    text-align: left;
+}
+
+.video-container {
+    flex: 0 0 auto; 
+    max-width: 600px; 
+}
+
+video {
+    width: 100%; 
+    height: auto; 
+    margin-top: 20px;
+}
+.btn_view {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px; 
+}
+
+.about-preview {
+    margin-top: 40px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.about_me_field {
+    font-size: 2rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.homepage-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+.welcome{
+    font-size: 3.5rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact {
+    margin-bottom: 10px;
+}
+
+/*ABOUT PAGE */
+.about-page {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-page img {
+    width: 200px;
+    margin-bottom: 15px;
+    
+}
+.about_me_field_text {
+    font-size: 19px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-page h1 {
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-page h2 {
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-page p {
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-section {
+    margin-bottom: 20px;
+}
+.about-section li {
+   font-family: 'Courier New', Courier, monospace;
+   list-style: none;
+}
+
+/*PORTFOLIO PAGE */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.portfolio-item {
+    width: 300px; 
+    height: 350px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+.portfolio-item h3{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+.portfolio-item p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 5px;
+}
+.portfolio-header {
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: black;
+}
+.portfolio-header h1{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.portfolio-header p{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.portfolio_deatils h1{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.portfolio_content h1{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*contact page*/
+.contact-page {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-socials a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    transition: 0.3s;
+}
+
+.contact-socials a:hover {
+    color: white;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact-form h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact-form p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-form button:hover {
+    background-color: lightgrey
+}
+.btn{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/*background animation*/
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+  .ml3 {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .letter {
+    opacity: 0; 
+    display: inline-block; 
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  /*mobile responsiveness*/
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .portfolio-item h3 {
+        font-size: 1rem;
+    }
+
+    .contact-form input, 
+    .contact-form textarea, 
+    .contact-form button {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* homepage responsive*/
+/* Media Queries (Mobile First) */
+@media (max-width: 768px) {
+    .homepage {
+        flex-direction: column;
+        align-items: center;
+    }
+	.left-content{
+		width: 100%;
+		max-width: 100%;
+		order: 1;
+	}
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .video-container {
+		order: 2;
+		margin-top: 20px;
+    }
+
+    .btn_view, .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 90%;
+    }
+}
